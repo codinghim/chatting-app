@@ -1,0 +1,135 @@
+.sign-in-form{
+    border-style: solid;
+    border-color: rgb(185, 185, 255, 1);
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 0% 25%;
+    padding: 5% 5%;
+
+}
+
+.form-control label{
+    color: rgb(110, 110, 250);
+}
+
+.form-control input{
+    border-style: solid;
+    border-color: rgb(185, 185, 255, 1);
+    border-radius: 10px;
+    height: 24px;
+}
+
+.form-control input:focus{
+    outline:none;
+    border-style: solid;
+    border-color: rgb(112, 112, 255);
+    border-radius: 10px;
+    height: 24px;
+}
+
+.title h1{
+    color: rgb(110, 110, 250);
+    margin: auto;
+    text-align: center
+}
+
+
+.title{
+    margin: 2% 0%;
+}
+
+.chat-messages{
+    border-style: solid;
+    border-color: rgb(185, 185, 255, 1);
+    border-width: 5px;
+    border-radius: 10px;
+    max-width: 50%;
+    margin: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1.2%;
+    height:50%;
+    overflow-y: scroll;
+    box-shadow: 5px 10px 5px rgba(185,185,185,1);
+}
+.chat-messages .message{
+    background-color: rgb(185, 185, 255, 1);
+    border-style: solid;
+    border-color: rgb(185, 185, 255, 1);
+    border-width: 5px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.chat-messages .message p{
+    margin-left: 1%;
+}
+.chat-messages .message .meta{
+    color: rgba(40, 40, 255, 1)
+}
+
+.chat-messages .message .meta span{
+    color: rgb(77, 77, 92)
+}
+
+.chat-form-container{
+    border-style: solid;
+    border-color: rgb(185, 185, 255, 1);
+    border-width: 5px;
+    border-radius: 10px;
+    max-width: 50%;
+    margin: auto;
+    padding: 1% 1% 1% 1%;
+    margin-top: 1%;
+    box-shadow: 5px 10px 5px rgba(185,185,185,1);
+}
+
+.chat-form-container form{
+    margin:auto;
+    border: 1px, black, solid;
+}
+
+.chat-form-container form input{
+    margin:auto;
+    border: 1px, black, solid;
+}
+
+.chat-form-container #msg{
+    border-style: solid;
+    border-color: rgb(185, 185, 255, 1);
+    border-width: 5px;
+    border-radius: 10px;
+    width: 70%;
+    margin:auto;
+    padding-top: 1%;
+    padding-bottom: 1.2%;
+}
+
+.chat-form-container .btn{
+    border-style: solid;
+    border-color: rgb(185, 185, 255, 1);
+    background-color: rgb(185, 185, 255, 1);
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 1% 5%;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(40, 40, 255, 1);
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+.welcome-message-container{
+    margin: auto;
+}
+.welcome-message-container .welcome-message{
+    margin: auto;
+    text-align: center;
+    color: rgb(121, 121, 250);
+    font-size: 50px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

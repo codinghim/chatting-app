@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Websocket Chatting App</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    </head>
+    <body>
+        <div class="title">
+            <h1>Chatting App</h1>
+        </div>
+        <form action="chat.html" class="sign-in-form">
+            <div class="form-control">
+                <label for="username" class="label-username">Username:</label>
+                <input 
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Enter username"
+                    required
+                />
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <script src="/chat.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Welcome to Chat Room</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="welcome-message-container">
+            <p class="welcome-message">
+                Welcome to Chatroom!
+            </p>
+        </div>
+        <div class="chatroom">
+            <div class="chat-messages">
+                <!-- <div class="message">
+                    <p class="meta">User A <span>TIME</span></p>
+                    <p class="text">
+                        Hello, World!
+                    </p>
+                </div> -->
+            </div>
+            <div class="chat-form-container">
+                <form id = "chat-form">
+                    <input 
+                        id="msg"
+                        type="text"
+                        placeholder="Enter Message"
+                        required
+                    />
+                    <button class='btn'>Send</button>
+                </form>
+            </div>  
+        </div>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" 
+            integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" 
+            crossorigin="anonymous">
+        </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/chat.js"></script>
+    </body>
+</html>
