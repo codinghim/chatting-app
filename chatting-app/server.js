@@ -26,21 +26,25 @@ app.use(express.static(path.join(__dirname, `public`)));
 io.on('connection', socket =>{
     console.log("New websocket connected...");
 
-    // Welcome current user
-    socket.emit('message', formatMessage(botName,'Welcome to Chat room!'));
+    // When Joins the chat room
+    socket.on('joinroom', username =>{
+        // Welcome current user
+        socket.emit('message', formatMessage(botName,'Welcome to Chat room!'));
 
-    // Broadcast when a user connects
-    socket.broadcast.emit('message', formatMessage(botName, 'A user has joined the chatroom'));
+        // Broadcast when a user connects
+        socket.broadcast.emit('message', formatMessage(botName, `${username} has joined the chatroom`));
+    });
+    
+
+    // Listen for chat messages
+    socket.on('chatMessage', ({username, msg}) => {
+        io.emit('message', formatMessage(username, msg))
+    });
 
     // Runs when a client disconnects
     socket.on('disconnect', () => {
-        io.emit('message', formatMessage(botName, 'A user has left the chatroom'));
-    })
-
-    // Listen for chat messages
-    socket.on('chatMessage', msg => {
-        io.emit('message', formatMessage('USERNAME', msg))
-    })
+        io.emit('message', formatMessage(botName, `${username} has left the chatroom`));
+    });
 
     // Braodcast to all users
     // io.emit();
