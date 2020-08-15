@@ -1,4 +1,4 @@
-#Simple Chatting app
+# Simple Chatting app
 
 This is a simple chatting app implented using socketio which is a library in NodeJS.
 
